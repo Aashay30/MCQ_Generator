@@ -5,11 +5,96 @@ This project utilizes the OpenAI API and LangChain to create a Generative AI mod
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot](https://example.com)
+![Product Name Screenshot](screenshots/Screenshot%202024-07-28%20004013.png)
 
 In this project, we have leveraged the capabilities of OpenAI models and Langchain API to generate quiz questions of MCQ or True/False type from a given text/PDF. The project aims to automate the process of generating quiz questions, thereby saving time and effort for educators, content creators, and learners. By utilizing advanced natural language processing (NLP) models, the application can extract key information from the text and formulate relevant quiz questions based on the content.
 
 The user can decide the number of questions to be generated, and the complexity level of the questions. The application provides a user-friendly interface that allows users to input the text or upload a PDF document, select the desired parameters, and generate quiz questions with a single click. The generated questions can be used for educational purposes, training materials, assessments, or content creation across various domains.
+
+
+<!-- DEPLOYMENT -->
+## Deployment
+The application is deployed via AWS EC2 instance. That can be achieved by following the steps below:
+
+1. **Create an AWS EC2 Instance**: 
+    - Launch an EC2 instance with the desired configuration.
+    - Ensure that the security group associated with the instance allows inbound traffic on port 8501 (Streamlit default port).
+
+2. **SSH into the EC2 Instance**:
+    - Use the SSH key pair associated with the EC2 instance to connect to the instance.
+
+3. **Install Required Packages**:
+    - Install the necessary packages and dependencies on the EC2 instance.
+    - Ensure that Python, Streamlit, and other required libraries are installed.
+    - It can be done using the following commands:
+    <br>
+    <sh>
+
+    ```
+    sudo apt-get update
+    ```
+
+    ```
+    sudo apt upgrade -y
+    ```
+
+    ```
+    sudo apt install python3-pip git curl unzip tar make sudo vim get -y
+    ```
+
+    ``` 
+    git clone "Your-repository"
+    ```
+
+    ```
+    cd "Your-repository"
+    ```
+
+    ```
+    pip3 install -r requirements.txt
+    ```
+    </sh>
+
+
+4. **Initialize the OPENAI API Key**:
+    - Set up the OpenAI API key on the EC2 instance.
+    - Create a `.env` file in the project directory and add the OpenAI API key.
+    - The `.env` file should contain the following line:
+    <br>
+    <sh>
+
+    ```
+    OPENAI_API_KEY=your_openai_api_key
+    ```
+    </sh>
+
+5. **Run the Streamlit Application**:
+    - Run the Streamlit application on the EC2 instance.
+    - Use the following command to start the Streamlit server:
+    <br>
+    <sh>
+
+    ```
+    python3 -m streamlit run StreamlitAPP.py
+    ```
+    </sh>
+
+
+6. **Access the Application**:
+    - Access the Streamlit application by visiting the public IP address of the EC2 instance followed by port 8501.
+    - The application should be accessible via a web browser.
+    - The URL format is as follows:
+
+    <sh>
+    
+    ```
+    http://"Your-EC2-Public-IP":8501
+    ```
+    </sh>
+
+The application should now be up and running on the AWS EC2 instance, allowing users to generate quiz questions from text or PDF documents. The screenshots for the instance are shown below:
+
+![instance_screenshot](screenshots/instance_screenshot.png)
 
 ## 🚀 Setup and Run
 
