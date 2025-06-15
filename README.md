@@ -13,15 +13,24 @@ The user can decide the number of questions to be generated, and the complexity 
 
 ---
 
-Screenshots
+## 📸 Screenshots
 
+### 🏠 Main Dashboard  
+An intuitive homepage to start uploading and customizing your MCQ generation.
 ![Main Page Dashboard](screenshots/dashboard.png)
 
+### 📤 Input Form  
+Upload `.txt` or `.pdf` files, set subject, number of questions, and difficulty level.
 ![Input](screenshots/input.gif)
 
+### 📋 Output Preview  
+Generated MCQs displayed in a clean, interactive table for easy review.
 ![Output](screenshots/output.png)
 
+### 🧠 Expert Review  
+Review the complexity of questions and refine them as needed.
 ![Reveiw](screenshots/reveiw.png)
+
 
 
 ---
