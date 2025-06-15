@@ -112,6 +112,48 @@ The application should now be up and running on the AWS EC2 instance, allowing u
 
 ---
 
+## 🗂️ Project Structure
+
+```
+├── [StreamlitAPP.py](http://_vscodecontentref_/2)         # Main Streamlit web app
+├── src/
+│   └── mcqgenerator/
+│       ├── [MCQGenerator.py](http://_vscodecontentref_/3) # Core MCQ generation logic
+│       ├── [utils.py](http://_vscodecontentref_/4)        # File reading and data utilities
+│       ├── [logger.py](http://_vscodecontentref_/5)       # Logging setup
+├── [test.py](http://_vscodecontentref_/6)                 # CLI test script
+├── [requirements.txt](http://_vscodecontentref_/7)        # Python dependencies
+├── [setup.py](http://_vscodecontentref_/8)                # Package setup
+├── [data.txt](http://_vscodecontentref_/9)                # Sample input data
+├── [Response.json](http://_vscodecontentref_/10)           # Sample MCQ response format
+├── logs/                   # Log files
+├── experiment/             # Notebooks and experiments
+└── [mcqgenrator.egg-info](http://_vscodecontentref_/11)   # Package metadata
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 3.9+
+- OpenAI API
+- LangChain
+- Streamlit
+- PyPDF2
+- python-dotenv
+- pandas
+
+---
+
+## 🌟 Example Workflow
+
+1. Upload a `.txt` or `.pdf` file via the web interface.
+2. Set the number of MCQs, subject, and question complexity.
+3. Click **Generate** — the app uses OpenAI + LangChain to create MCQs.
+4. Review the generated questions and download them for your use!
+
+---
+
 ## 🚀 Setup and Run
 
 1. **Clone the repository**:
