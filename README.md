@@ -2,6 +2,8 @@
 
 This project utilizes the OpenAI API and LangChain to create a Generative AI model that generates multiple-choice questions (MCQs) based on given input files. The model accepts `.txt` and `.pdf` files and allows users to specify the subject and tone (difficulty level) to generate the desired number of MCQs. An engaging web interface is built using Streamlit for easy interaction.
 
+---
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -11,6 +13,7 @@ In this project, we have leveraged the capabilities of OpenAI models and Langcha
 
 The user can decide the number of questions to be generated, and the complexity level of the questions. The application provides a user-friendly interface that allows users to input the text or upload a PDF document, select the desired parameters, and generate quiz questions with a single click. The generated questions can be used for educational purposes, training materials, assessments, or content creation across various domains.
 
+---
 
 <!-- DEPLOYMENT -->
 ## Deployment
@@ -95,6 +98,19 @@ The application is deployed via AWS EC2 instance. That can be achieved by follow
 The application should now be up and running on the AWS EC2 instance, allowing users to generate quiz questions from text or PDF documents. The screenshots for the instance are shown below:
 
 ![instance_screenshot](screenshots/instance_screenshot.png)
+
+---
+
+## ✨ Features
+
+- 📂 **File Upload**: Accepts `.txt` and `.pdf` files for MCQ generation.  
+- 🎛️ **Customization**: Choose the number of questions, subject, and difficulty (tone).  
+- 🤖 **AI-Powered**: Uses OpenAI’s GPT models via LangChain for intelligent question creation.  
+- 📊 **Instant Review**: View MCQs in a table and get an expert review of question complexity.  
+- 📝 **Logging**: All activity is logged for transparency and debugging.  
+- 🖥️ **Streamlit UI**: Clean, interactive web interface for all users.
+
+---
 
 ## 🚀 Setup and Run
 
